@@ -69,7 +69,10 @@ public StudentEntity getId(@PathVariable("id") int id) {
 	
 	@PutMapping("s7/{id}")
 	public StudentEntity updateById(@PathVariable("id") int id, @RequestBody StudentEntity update) {
+		System.out.println("hi");
+		System.out.println("hello");
 		return service.updateId(id, update);
+		
 		
 	}
 	
